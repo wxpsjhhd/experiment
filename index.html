@@ -3,47 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSDC</title>
-    <link rel="stylesheet" href="css/index.css">
-    <style>
-        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
-        body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
-        h1, h2, h3, h4, h5, h6{ font-size:100%; } 
-        address, cite, dfn, em, var { font-style:normal; } 
-        code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
-        small{ font-size:12px; } 
-        ul, ol { list-style:none; } 
-        a { text-decoration:none; } 
-        a:hover { text-decoration:underline; } 
-        sup { vertical-align:text-top; } 
-        sub{ vertical-align:text-bottom; } 
-        legend { color:#000; } 
-        fieldset, img { border:0; } 
-        button, input, select, textarea { font-size:100%; } 
-        table { border-collapse:collapse; border-spacing:0; } 
-    </style>
+    <title>结课作业</title>
+    <!--引入初始化css-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--引入插件css-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!--引入自己的css-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <style>
+        .swiper-container {
+            width: 100%;
+        }  
+        .swiper-slide img{
+            width: 100%;
+        }
+        .swiper-button-prev,.swiper-button-next{
+            color: rgba(255, 255, 255, 0.3);
+        }
+    </style> -->
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <a href="https://www.dton.top/test" style="text-decoration: none;">
-                <img src="https://th.wallhaven.cc/small/r7/r7zm17.jpg" width="75px" alt="logo">
-                MSDC
+    <!--轮播图-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/banner_1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/banner_2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/banner_3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/banner_4.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+
+
+
+    
+    <div class="container">
+        <!--标题1-->
+        <div class="title_body">
+            <h1>Discipline/学科分类</h1>
+            <h5>不断深入技术前沿领域</h5>
+        </div>
+        <!--学科分类-->
+        <div class="xuekefenlei clearfix">
+            <a href="#" class="xueke">
+                <img src="./images/html.jpg" alt="html">
+            </a>
+            <a href="#" class="xueke">
+                <img src="./images/java.jpg" alt="java">
+            </a>
+            <a href="#" class="xueke">
+                <img src="./images/python.jpg" alt="python">
+            </a>
+            <a href="#">
+                <img src="./images/ui.jpg" alt="ui">
             </a>
         </div>
-        <div id="main">
-            <div id="lside">
-                <ul>
-                    <a href="https://www.dton.top">
-                        <img src="https://th.wallhaven.cc/small/r7/r7zm17.jpg" width="80px" alt="">
-                    </a>
-                    <br>
-                    <a href="" style="text-decoration: none;">工具</a>
-                </ul>
-            </div>
-            <div id="rside"></div>
+
+        <!--更多作品-->
+        <a href="#" id="more">更多作品
+            <i></i>
+        </a>
+        <!--标题2-->
+        <div class="title_body">
+            <h1>Course/往期公开课</h1>
+            <h5>专为在校学生研发的精品课程</h5>
         </div>
-        <div id="footer"></div>
+        <!--往期公开课-->
+        <div class="wangqike clearfix">
+            <a href="#" class="wangqi">
+                <i>
+                    <img src="./images/intelligence_lesson.jpg" alt="">
+                </i>
+                <div id="test"> 
+                    <p>人工智能公开课</p>
+                    <p>两小时学会400万玩家排名数据分析</p>
+                </div>
+            </a>
+            <a href="#" class="wangqi">
+                <i>
+                    <img src="./images/java_lesson.jpg" alt="">
+                </i>
+                <div id="test"> 
+                    <p>Java公开课</p>
+                    <p>从MOBA类游戏看设计模式</p>
+                </div>
+            </a>
+            <a href="#" class="wangqi">
+                <i>
+                    <img src="./images/ui_lesson.jpg" alt="">
+                </i>
+                <div id="test"> 
+                    <p>UI公开课</p>
+                    <p>小白入门第一课零基础学UI</p>
+                </div>
+            </a>
+            <a href="#">
+                <i>
+                    <img src="./images/web_lesson.jpg" alt="">
+                </i>
+                <div id="test"> 
+                    <p>人工智能公开课</p>
+                    <p>两小时学会400万玩家排名数据分析</p>
+                </div>
+            </a>
+        </div>
+        <!--更多作品2-->
+        <a href="#" id="more">更多作品
+            <i></i>
+        </a>
+        <!--标题3-->
+        <div class="title_body">
+            <h1>SuperStar/超级明星俱乐部</h1>
+            <h5>技术达人,最强大脑,前端先驱</h5>
+        </div>
+        <!--SuperStar-->
+        <div class="superstar clearfix">
+            <a href="#" class="star">
+                <div class="touxiang">
+                    <i>
+                        <img src="./images/jetyu.jpg" alt="">
+                    </i>
+                    <h1>JetYu 于涛</h1>
+                </div>
+                <div class="wenzi">AlloyTeam 创始人</div>
+            </a>
+            <a href="#" class="star">
+                <div class="touxiang">
+                    <i>
+                        <img src="./images/dntzhang.jpg" alt="">
+                    </i>
+                    <h1>DntZhang 张磊</h1>
+                </div>
+                <div class="wenzi">知名博主,多个开源框架作者</div>
+            </a>
+            <a href="#">
+                <div class="touxiang">
+                    <i>
+                        <img src="./images/dorsywang.jpg" alt="">
+                    </i>
+                    <h1>DorsyWang 王老师</h1>
+                </div>
+                <div class="wenzi">数学达人,图像处理专家</div>
+            </a>
+        </div>
+        <!--更多-->
+        <a href="#" id="more">更多作品
+            <i></i>
+        </a>     
     </div>
+    <!--底部-->
+    <div id="footer">
+        <div id="one">
+            <img src="./images/logo.png" alt="" width="300px" >
+            <h2>协万千名校育人,助天下英才圆梦</h2>
+            <p>©2019江苏传智播客教育科技股份有限公司苏Icp备16007882号-6营业执照增值电信业务经营许可证</p>
+        </div>
+        <div id="two">
+            <h2>兄弟团队</h2>
+            <a href="#">腾讯CDC</a>
+            <a href="#">腾讯ISUX</a>
+            <a href="#">腾讯TGideas</a>
+            <a href="#">腾讯FERD</a>
+            <a href="#">百度FEX</a>
+            <a href="#">淘宝FED</a>
+        </div>
+        <div id="three">
+            <h2>友情链接</h2>
+            <a href="#">传智教育</a>
+            <a href="#">CSDN 黑马程序员</a>
+            <a href="#">博学谷</a>
+            <a href="#">传智专修学院</a>
+            <a href="#">酷丁鱼</a>
+            <a href="#">传智汇</a>
+            <a href="#">黑马教程</a>
+            <a href="#">中国教育网</a>
+        </div>
+        <div id="four">
+            <img src="./images/m_code.jpg" alt="" width="100px">
+            <p>扫码添加邦小苑公众号</p>
+            <p>获取更多教辅资源</p>
+        </div>
+        <div id="four">
+            <img src="./images/x_code.png" alt="" width="100px">
+            <p>扫码添加小邦学姐微信</p>
+            <p>获取更多学习资源</p>
+        </div>
+    </div> 
+
+
+
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          autoplay: true,
+            //   direction: 'vertical', // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          
+          // 如果需要滚动条
+        //   scrollbar: {
+        //     el: '.swiper-scrollbar',
+        //   },
+        })        
+        </script>
+
+    
 </body>
 </html>
